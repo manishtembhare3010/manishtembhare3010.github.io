@@ -184,12 +184,51 @@ function addTypingAnimation() {
     }, 100);
 }
 
+// AI Brain Animation
+function initAIBrainAnimation() {
+    const neuralParticles = document.querySelector('.neural-particles');
+    if (!neuralParticles) return;
+    
+    // Create animated connection lines
+    for (let i = 0; i < 15; i++) {
+        const line = document.createElement('div');
+        line.className = 'neural-connection';
+        line.style.left = `${Math.random() * 100}%`;
+        line.style.top = `${Math.random() * 100}%`;
+        line.style.width = `${Math.random() * 50 + 20}px`;
+        line.style.transform = `rotate(${Math.random() * 360}deg)`;
+        line.style.animationDelay = `${Math.random() * 5}s`;
+        neuralParticles.appendChild(line);
+    }
+
+    // Add this styling for neural connections
+    document.head.insertAdjacentHTML('beforeend', `
+        <style>
+            .neural-connection {
+                position: absolute;
+                height: 2px;
+                background: linear-gradient(90deg, rgba(59, 130, 246, 0), rgba(59, 130, 246, 0.8), rgba(59, 130, 246, 0));
+                opacity: 0.6;
+                z-index: 2;
+                animation: pulse-connection 3s infinite alternate;
+            }
+            
+            @keyframes pulse-connection {
+                0% { opacity: 0.2; width: 30px; }
+                50% { opacity: 0.8; width: 40px; }
+                100% { opacity: 0.2; width: 30px; }
+            }
+        </style>
+    `);
+}
+
 // Initialize all animations and effects
 function initializeAnimations() {
     createAIParticles();
     createNeuralConnections();
     highlightAITerms();
     addTypingAnimation();
+    initAIBrainAnimation();
     
     // Add data attributes to section titles
     document.querySelectorAll('.section-title').forEach(title => {

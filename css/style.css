@@ -399,6 +399,154 @@ header::before {
     text-align: center;
 }
 
+/* AI-Themed Profile Image */
+.ai-profile-image {
+    width: 280px;
+    height: 280px;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(59, 130, 246, 0.3);
+    overflow: hidden;
+    background: linear-gradient(145deg, rgba(17,24,39,0.8), rgba(59,130,246,0.2));
+}
+
+.neural-network-animation {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.ai-brain-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.ai-brain-img {
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+    position: relative;
+    z-index: 2;
+    filter: drop-shadow(0 0 8px rgba(139, 92, 246, 0.8));
+    animation: pulse-glow 3s infinite alternate;
+}
+
+.ai-brain-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        radial-gradient(circle at 30% 30%, rgba(59, 130, 246, 0.4), transparent 70%),
+        radial-gradient(circle at 70% 70%, rgba(139, 92, 246, 0.4), transparent 70%);
+    mix-blend-mode: overlay;
+    z-index: 3;
+}
+
+.neural-particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.neural-particles::before,
+.neural-particles::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: 
+        radial-gradient(circle at 20% 35%, rgba(59, 130, 246, 0.4), transparent 10%),
+        radial-gradient(circle at 75% 44%, rgba(139, 92, 246, 0.4), transparent 12%),
+        radial-gradient(circle at 46% 52%, rgba(6, 182, 212, 0.4), transparent 14%),
+        radial-gradient(circle at 60% 70%, rgba(20, 184, 166, 0.4), transparent 10%),
+        radial-gradient(circle at 30% 80%, rgba(59, 130, 246, 0.4), transparent 12%),
+        radial-gradient(circle at 80% 15%, rgba(139, 92, 246, 0.4), transparent 14%);
+    background-size: 150% 150%;
+    animation: float-particles 15s linear infinite alternate;
+}
+
+.neural-particles::after {
+    filter: blur(10px);
+    opacity: 0.7;
+    animation-duration: 20s;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes pulse-glow {
+    0% {
+        filter: drop-shadow(0 0 8px rgba(139, 92, 246, 0.6));
+        transform: scale(1);
+    }
+    50% {
+        filter: drop-shadow(0 0 12px rgba(59, 130, 246, 0.8));
+        transform: scale(1.02);
+    }
+    100% {
+        filter: drop-shadow(0 0 8px rgba(139, 92, 246, 0.6));
+        transform: scale(1);
+    }
+}
+
+@keyframes float-particles {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+/* Additional animation for brain image */
+.ai-profile-image:hover .ai-brain-img {
+    animation: rotate-pulse 2s ease-in-out;
+}
+
+@keyframes rotate-pulse {
+    0% { transform: scale(1) rotate(0deg); }
+    25% { transform: scale(1.05) rotate(5deg); }
+    50% { transform: scale(1.1) rotate(0deg); }
+    75% { transform: scale(1.05) rotate(-5deg); }
+    100% { transform: scale(1) rotate(0deg); }
+}
+
+/* Keep the original styles for compatibility */
+.profile-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border: 8px solid white;
+    position: relative;
+    background-color: #f8f9fa;
+}
+
+.profile-pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.profile-image:hover .profile-pic {
+    transform: scale(1.05);
+}
+
+/* Original placeholder styles for backward compatibility */
 .img-placeholder {
     width: 250px;
     height: 250px;
