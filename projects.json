@@ -1,0 +1,112 @@
+{
+  "projects": [
+    {
+        "title": "Email Automation System",
+        "description": "LLM-based chatbot system for automating email responses and customer interactions",
+        "details": [
+          "Integrated GPT and BERT models to analyze and generate appropriate email responses",
+          "Implemented NLP classification system to prioritize and categorize incoming emails",
+          "Built FastAPI backend for seamless integration with existing email systems",
+          "Reduced customer response time by 65% and improved satisfaction metrics"
+        ],
+        "technologies": ["Python", "FastAPI", "NLP", "LLMs", "Hugging Face", "AWS", "Docker"],
+        "repoUrl": "https://github.com/manishtembhare3010/email-automation",
+        "liveUrl": ""
+      },
+      {
+        "title": "LLM-Model-Comparison",
+        "description": "Comparative analysis of various Large Language Models for different NLP tasks",
+        "details": [
+          "Conducted a comprehensive benchmark analysis of multiple Large Language Models",
+          "Evaluated performance across various metrics including accuracy, speed, and resource usage",
+          "Compared models for specific NLP tasks including text generation and summarization",
+          "Presented findings using interactive visualizations and comparative charts"
+        ],
+        "technologies": ["Python", "LLMs", "NLP", "Jupyter Notebook", "Hugging Face", "Transformers"],
+        "repoUrl": "https://github.com/manishtembhare3010/LLM-Model-Comparison",
+        "liveUrl": ""
+      },
+      {
+        "title": "ATS-System-Using-LLM(Gemini)",
+        "description": "AI-powered Applicant Tracking System that uses Google's Gemini LLM to screen resumes",
+        "details": [
+          "Built an Applicant Tracking System leveraging Google's Gemini LLM technology",
+          "Implemented automated resume screening and candidate ranking features",
+          "Designed an intuitive interface for HR professionals to manage applications",
+          "Used Natural Language Processing to extract and evaluate candidate qualifications"
+        ],
+        "technologies": ["Python", "LLMs", "Gemini", "NLP", "AI", "Google API"],
+        "repoUrl": "https://github.com/manishtembhare3010/ATS-System-Using-Gemini",
+        "liveUrl": ""
+      },
+      {
+        "title": "Linear-Regression-Model",
+        "description": "Predictive model using linear regression to forecast student scores based on study hours",
+        "details": [
+          "Implemented linear regression algorithm to predict student scores based on study time",
+          "Created data visualization to demonstrate the relationship between study hours and performance",
+          "Evaluated model performance using R-squared and Mean Squared Error metrics",
+          "Developed a solution that can be used for academic planning and intervention"
+        ],
+        "technologies": ["Python", "Machine Learning", "Linear Regression", "scikit-learn", "NumPy", "Jupyter Notebook"],
+        "repoUrl": "https://github.com/manishtembhare3010/Linear-Regression-Model",
+        "liveUrl": ""
+      },
+    {
+      "title": "Data-analysis-on-Zomato-dataset",
+      "description": "A comprehensive analysis of Zomato restaurant data to derive business insights and patterns",
+      "details": [
+        "Performed Exploratory Data Analysis (EDA) on Zomato dataset to extract meaningful insights",
+        "Created visualizations to identify trends and patterns in restaurant ratings and cuisines",
+        "Analyzed geographical distribution and customer preferences by location",
+        "Implemented data cleaning and preprocessing techniques to ensure quality analysis"
+      ],
+      "technologies": ["Python", "Data Analysis", "Pandas", "Matplotlib", "Seaborn", "Jupyter Notebook"],
+      "repoUrl": "https://github.com/manishtembhare3010/Data-analysis-on-Zomato-dataset",
+      "liveUrl": ""
+    },
+    
+    {
+      "title": "Salary-Prediction-using-Machine-Learning",
+      "description": "ML model that predicts salary based on years of professional experience",
+      "details": [
+        "Developed a machine learning model to predict salaries based on years of experience",
+        "Implemented data preprocessing and feature engineering techniques",
+        "Trained and evaluated multiple regression models to find the best performer",
+        "Created visualizations to explain the relationship between experience and compensation"
+      ],
+      "technologies": ["Python", "Machine Learning", "Regression", "Data Visualization", "Pandas", "Jupyter Notebook"],
+      "repoUrl": "https://github.com/manishtembhare3010/Salary-Prediction-using-Machine-Learning",
+      "liveUrl": ""
+    },
+    {
+      "title": "ATS-System-Using-Gemini",
+      "description": "AI-powered Applicant Tracking System that uses Google's Gemini LLM to screen resumes",
+      "details": [
+        "Built an Applicant Tracking System leveraging Google's Gemini LLM technology",
+        "Implemented automated resume screening and candidate ranking features",
+        "Designed an intuitive interface for HR professionals to manage applications",
+        "Used Natural Language Processing to extract and evaluate candidate qualifications"
+      ],
+      "technologies": ["Python", "LLMs", "Gemini", "NLP", "AI", "Google API"],
+      "repoUrl": "https://github.com/manishtembhare3010/ATS-System-Using-Gemini",
+      "liveUrl": ""
+    },
+    
+    
+    
+    {
+      "title": "Portfolio Website",
+      "description": "Professional portfolio website to showcase my projects and skills in AI and software development",
+      "details": [
+        "Created responsive design using HTML5, CSS3 and JavaScript",
+        "Implemented modern UI elements and animations with AI-themed visuals",
+        "Designed for optimal user experience across all device sizes",
+        "Dynamic content loading from JSON data source with GitHub integration"
+      ],
+      "technologies": ["HTML", "CSS", "JavaScript", "Responsive Design", "UI/UX", "Web Development"],
+      "repoUrl": "https://github.com/manishtembhare3010/portfolio",
+      "liveUrl": "https://manishtembhare3010.github.io"
+    }
+  ]
+} 
